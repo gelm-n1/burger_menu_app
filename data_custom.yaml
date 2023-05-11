@@ -1,0 +1,6 @@
+train: F:\PycharmProjects\test_ex_try_2\train
+val: F:\PycharmProjects\test_ex_try_2\val
+
+nc: 1
+
+names: ['burger_menu']
