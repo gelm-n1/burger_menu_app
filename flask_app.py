@@ -7,6 +7,14 @@ from wtforms import SubmitField
 import os
 import time
 
+# if ImportError: cannot import name 'secure_filename' from 'werkzeug' 
+# In venv/Lib/site-packages/flask_uploads.py
+# Change
+# from werkzeug import secure_filename,FileStorage
+# to
+# from werkzeug.utils import secure_filename
+# from werkzeug.datastructures import  FileStorage
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'asdfasfdgdf'
 app.config['UPLOADED_PHOTOS_DEST'] = 'uploads'
